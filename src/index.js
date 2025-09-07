@@ -11,17 +11,18 @@ class GuessingGame {
   }
 
   guess() {
-    this.currentGuess = Math.ceil((this.min + this.max) / 2);
+    this.currentGuess = Math.ceil((this.min + this.max) / 2); // <== ИСПРАВЛЕНО
     return this.currentGuess;
   }
 
   lower() {
-    this.max = this.currentGuess - 1;
-  }
+  this.max = this.currentGuess; // включаем currentGuess
+}
 
-  greater() {
-    this.min = this.currentGuess + 1;
-  }
+greater() {
+  this.min = this.currentGuess; // включаем currentGuess
+}
+
 }
 
 module.exports = GuessingGame;
