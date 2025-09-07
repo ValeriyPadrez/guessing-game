@@ -16,13 +16,12 @@ class GuessingGame {
   }
 
   lower() {
-  this.max = this.currentGuess; // включаем currentGuess
-}
+    this.max = this.currentGuess; // включаем currentGuess
+  }
 
-greater() {
-  this.min = this.currentGuess; // включаем currentGuess
-}
-
+  greater() {
+    this.min = this.currentGuess; // включаем currentGuess
+  }
 }
 
 module.exports = GuessingGame;
